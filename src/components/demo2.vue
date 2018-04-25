@@ -1,20 +1,22 @@
 <template>
   <div>
-    <h3 v-if="isIf">{{ msg }} aaasds</h3>
-    <span v-show="isShow">acc</span>
-    <h4 v-text="msg"></h4>
-    <h5 v-html="msg"></h5>
+    <button v-on:click="doClick">doClick</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'demo1',
+  name: 'demo2',
   data () {
     return {
       msg : "hello demo1",
       isShow: true,
       isIf:false
+    }
+  },
+  methods : {
+    doClick : function(){
+      console.log("doClick...");
     }
   }
 }
