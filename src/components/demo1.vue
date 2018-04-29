@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2 v-html="title"></h2>
     <h3 v-if="isIf">{{ msg }} aaasds</h3>
     <span v-show="isShow">acc</span>
     <h4 v-text="msg"></h4>
@@ -12,6 +13,7 @@ export default {
   name: 'demo1',
   data () {
     return {
+      title: "v-if、v-show、v-text、v-html使用",
       msg : "hello demo1",
       isShow: true,
       isIf:false

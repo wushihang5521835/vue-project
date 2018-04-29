@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2 v-html="title"></h2>
     <button v-on:click="doClick">doClick</button>
   </div>
 </template>
@@ -9,6 +10,7 @@ export default {
   name: 'demo2',
   data () {
     return {
+      title: "v-on:click事件使用",
       msg : "hello demo1",
       isShow: true,
       isIf:false
